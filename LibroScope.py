@@ -91,7 +91,7 @@ def main():
         print("Invalid book name.\nGood bye.")
         return
 
-    bookPage = input("Page: ")
+    bookPage = input("Page (empty for all): ")
     bookPage = validatePageInput(bookPage)
 
     if bookPage is None: 
