@@ -100,7 +100,7 @@ def main():
 
     print("..............")
     
-    if(bookPage == True):
+    if isinstance(bookPage, bool) and bookPage == True:
         charactersCount = library.getAllBookCharactersCount(bookName)
     else: 
         charactersCount = library.getBookPageCharactersCount(bookName, bookPage)
